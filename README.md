@@ -17,6 +17,6 @@ exchanging ideas, or collaborating on different projects.
 
 ---
 
-🔎 **[memecoins_rigged](https://github.com/searadacunha/memecoins_rigged)** — the full on-chain
+🔎 **[Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)** — the full on-chain
 forensic study behind the $400 → $237,137.87 example: how the Solana memecoin accumulation pattern
 worked, and how the market changed. Every figure is reproducible from the code and data in the repo.
