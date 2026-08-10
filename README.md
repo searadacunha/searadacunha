@@ -1,9 +1,7 @@
-### Hi, I'm Benjamin Da Cunha 👋
-
-I'm a former professional boxer. I competed in France, the United States, Mexico and Colombia.
+### I'm Benjamin Da Cunha, former professional boxer. I competed in France, the United States, Mexico and Colombia.
 
 The injuries forced me to end my career, so I turned to cryptocurrency with no background in finance
-or technology — but everything became surprisingly simple once you open your eyes.
+or technology but everything became surprisingly simple once you open your eyes.
 
 Through observation, pattern recognition on Solana memecoins, and a series of well-timed
 investments, I reached a million. One of the clearest examples of this approach took me from
@@ -15,7 +13,7 @@ practical, no-nonsense approaches that anyone willing to put in the work can und
 If the way I approach markets resonates with you, feel free to reach out. I'm open to connecting,
 exchanging ideas, or collaborating on different projects.
 
-📫 **searadacunha@gmail.com**
+📫 **contact@teamdacunha.com**
 
 ---
 
