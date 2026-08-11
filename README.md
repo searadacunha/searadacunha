@@ -1,7 +1,7 @@
 ### I'm Benjamin Da Cunha, former professional boxer.
 
 I competed in France, the United States, Mexico and Colombia but the injuries forced me to end my career, so I turned to cryptocurrency with no background in finance
-or technology but everything became surprisingly simple once you open your eyes.
+or technology but everything became surprisingly simple if you open your eyes.
 
 Through observation, pattern recognition on Solana memecoins, and a series of well-timed
 investments, I reached a million. One of the clearest examples of this approach took me from
