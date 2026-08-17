@@ -12,10 +12,10 @@ practical, no-nonsense approaches that anyone willing to put in the work can und
 If the way I approach markets resonates with you, feel free to reach out. I'm open to connecting,
 exchanging ideas, or collaborating on different projects.
 
-📫 **contact@teamdacunha.com**
+**contact@teamdacunha.com**
 
 ---
 
-🔎 **[Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)** — the full on-chain
+**[Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)** — the full on-chain
 forensic study behind the $400 → $237,137.87 example: how the Solana memecoin accumulation pattern
 worked, and how the market changed. Every figure is reproducible from the code and data in the repo.
