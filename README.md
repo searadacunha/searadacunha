@@ -1,186 +1,52 @@
 # Benjamin Da Cunha
 
-**Blockchain Intelligence Analyst · On-Chain Forensics · Fraud Detection**
+**Python Data Pipelines & Automation · Blockchain Intelligence · Statistical Validation**
 
-Former professional boxer turned self-taught blockchain analyst.
+Independent technical researcher, self-taught, building data and automation systems since December 2023. I take a badly defined question, build the tools to collect and rebuild the data, test whether my conclusions survive, and publish them so they can be checked.
 
-I investigate blockchain activity through **transaction reconstruction, funding-flow analysis, wallet behavior, temporal patterns, graph analysis, and adversarial validation**.
-
-My work focuses on **Solana, blockchain forensics, transaction monitoring, fraud detection, funding flows, launch microstructure, and behavioral analysis**.
+My main investigation is on-chain: Solana memecoin launches, funding flows, coordinated wallets and the limits of predictive signals. The way of working is not tied to crypto.
 
 ---
 
-## Featured Investigation
+## Featured: [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
 
-### [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
+An investigation of pump.fun launches whose core offline pipeline reproduces byte for byte from a clone, from a pattern I traded in 2024 to the mechanism that replaced it in 2026.
 
-**A reproducible on-chain forensic investigation of pump.fun launch microstructure, wallet behavior, funding patterns, and a historical Solana trading signal.**
+* **2024.** Fresh wallets funded through the same swap service hours before a launch, then buying in public. I traded the pattern; my withdrawals for October to December 2024 ($237,137.87) are rebuilt on chain from my own exchange deposit address. The starting capital, roughly $400, is my recollection and is marked unsourced in the repository.
+* **2026.** On 42 launches of recurring buyer groups, rebuilt transaction by transaction, almost the entire bonding curve is bought in the block that creates the token: about 85 SOL for about 79% of the supply, with no public purchase before it. A selected sample, not a market-wide rate.
+* **Can it be traded?** A live detector I built (its code is not public) alerted on 1,657 launches between 21 August and 29 September 2026. Nine studies, each with a written plan and a frozen input table, then one exploratory search over 415 features. Among the alerted launches, the buying wallets act as a group in about four out of five. One signal survived the held-out test and still lost money after costs: no tradable edge.
+* **Negative results kept.** A buyer graph that put 63.8% of tokens in one component fell to 20.2% once nine infrastructure addresses were removed. The 2024 funding signature separated the tokens I traded from dead tokens only through a criterion that also fires on 88.9% of random wallet groups; without it, and against graduated tokens, it does not.
 
-The research reconstructs blockchain activity at transaction level and tests whether apparently structured behavior remains significant after accounting for:
+## What the repository shows
 
-* shared infrastructure
-* temporal co-occurrence
-* selection and denominator effects
-* missing data and measurement failures
-* lookahead and multiple testing
-* inappropriate control populations
-* execution costs and market impact
+| Skill | Where to look |
+|---|---|
+| Python data pipelines | [`code/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/code): one script per measurement, standard library only; [`run_all.py --strict`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/run_all.py) reruns the 22 offline scripts and checks their tables and JSON byte for byte against the committed ones |
+| API integration | [`rpc_client.py`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/rpc_client.py): a Solana RPC client with key rotation, a cooldown after HTTP 429 and bounded retries, where a failed call raises instead of returning an empty result; read-only calls to pump.fun, GeckoTerminal and Binance |
+| Automation and CI | [`ci.yml`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/.github/workflows/ci.yml) on Python 3.12 and 3.13: byte-for-byte reproduction, a ledger that checks 43 of the README's figures against their artefacts, 76 unit tests, `mypy --strict`, `ruff`, a publication gate |
+| Transaction analysis and fund tracing | [`02_cn_outflows.py`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/02_cn_outflows.py) (a swap service's hot-wallet outflows), [`exit_destination/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/exit_destination), [`funder_network/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/funder_network) |
+| Detection and false positives | [`a1_null_model.py`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/a1_null_model.py): a funding detector tested against random wallet groups; one of its criteria fired on 88.9% of them and was retired |
+| Statistical validation | [`post_detection_edge/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/post_detection_edge): signals locked before a held-out test, models written from scratch; cluster bootstraps, permutation and Fisher tests; a chained registry of every test run in the October 2026 search ([`alpha_patterns/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/alpha_patterns)) |
+| Data-quality controls | [`PITFALLS.md`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/docs/PITFALLS.md): an HTTP 403 that had become "no data", a network failure that looked like a result, a monitor that reported healthy while it was not |
+| Attribution discipline | [`METHODOLOGY.md`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/docs/METHODOLOGY.md): observed, inferred and attributed kept apart; exchange infrastructure recorded as not established rather than assigned to a person |
 
-The objective is not to find the strongest story in the data.
+Not public: the live detector's code (a separate project).
 
-> **It is to find the strongest conclusion that survives attempts to break it.**
+## How I work
 
----
+1. Write a falsifiable question and fix the population before computing any rate.
+2. Rebuild the transactions and the chronology from the raw data.
+3. Try to break the result: shared infrastructure, selection, missing data, lookahead, multiple testing, costs.
+4. Publish what survives, and keep the corrections visible.
 
-## From Trading Signal to Blockchain Intelligence
+**Observed is not inferred, and inferred is not attributed.** Wallets can be linked on chain without proving who controls them.
 
-My entry into crypto was practical.
-
-Through pattern recognition on Solana memecoins, I identified a recurring funding and accumulation structure and used it to execute trades.
-
-One documented historical example took **$400 to $237,137.87 in withdrawals** during the period covered by the research.
-
-When the market structure changed, I investigated the mechanism behind the historical edge rather than assuming the signal remained valid.
-
-The investigation evolved into:
-
-**observation → transaction reconstruction → fund-flow analysis → pattern detection → controls → adversarial testing → reproducible conclusion**
-
----
-
-## Investigation Framework
-
-The research follows a structured forensic workflow:
-
-1. **Define a falsifiable question**
-2. **Define the population and measurement rules**
-3. **Reconstruct transactions and chronology**
-4. **Trace funding and asset flows**
-5. **Detect repeated structures**
-6. **Test alternative explanations**
-7. **Separate observation from attribution**
-8. **Reproduce the result**
-
-A recurring principle is:
-
-**Observed ≠ Inferred ≠ Attributed**
-
-Wallet similarity, shared infrastructure, or recurring execution patterns can establish relationships between on-chain entities without establishing the identity of a human operator.
-
----
-
-## Key Findings
-
-### Launch microstructure
-
-Across **42 transaction-level reconstructed launches**:
-
-* Median committed SOL: **85.21 SOL**
-* Median supply acquired: **78.95%**
-* Median launch market cap: **~$2,158**
-* Median AMM-open market cap: **~$53,985**
-* Intra-core timing gap: **0 slots in all 42**
-
-### Buyer structures
-
-The initial buyer graph contained **180 / 282 tokens (63.8%)** inside its largest connected component.
-
-After removing nine high-ubiquity infrastructure addresses:
-
-**57 / 282 (20.2%)** remained.
-
-The investigation does not interpret these clusters as proof of a single operator.
-
-### Historical funding pattern
-
-Reproducible pre-launch funding structures involving fresh wallets and recurring funding amounts were identified across multiple tokens.
-
-However, the control analysis **did not support the broader hypothesis** that the pattern was systematically more common among traded graduated tokens.
-
-The case-level mechanism survived.
-
-The broader prevalence claim did not.
-
-### Trading-edge validation
-
-The historical signal was tested under realistic detection and execution constraints.
-
-Under the tested policies:
-
-* **15 / 15** had negative mean returns
-* **12 / 15** had negative median returns
-* **0 / 15** had confidence intervals above zero
-* +1h median multiple: **0.48×**
-* +24h median multiple: **0.20×**
-
-The tested post-detection policies did not demonstrate positive measured expectancy on the declared population.
-
----
-
-## Methodological Discipline
-
-The investigation is built around several principles:
-
-* A detector must survive a **null model**
-* Controls must resemble the **target population**
-* **Missing data is not zero**
-* Historical knowledge cannot enter a supposedly live strategy
-* **Identity requires evidence**
-* Corrections remain visible
-
-When a measurement is superseded by a better reconstruction, the correction is documented rather than silently replaced.
-
----
-
-## Reproducibility
-
-The repository is backed by:
-
-* public on-chain data
-* committed datasets and derived artefacts
-* deterministic Python scripts
-* explicit measurement definitions
-* validation scripts
-* reproducible tables and JSON outputs
-* documented methodological corrections
-
-The research is structured so the reader can move from:
-
-**claim → measurement → code → data → validation**
-
-rather than taking the narrative on trust.
-
----
-
-## Repository Structure
-
-| File                    | Purpose                                  |
-| ----------------------- | ---------------------------------------- |
-| `docs/INVESTIGATION.md` | Forensic workflow                        |
-| `docs/METHODOLOGY.md`   | Definitions and measurement methodology  |
-| `docs/RESULTATS.md`     | Main results                             |
-| `docs/PITFALLS.md`      | Attempts to invalidate findings          |
-| `docs/PATTERN.md`       | Historical funding-pattern investigation |
-| `docs/SPLIT_PHASE1.md`  | Controlled historical investigation      |
-| `docs/EXPLOITATION.md`  | Historical trading and signal record     |
-| `code/README.md`        | Analysis pipeline and reproducibility    |
-
----
+I build with AI coding agents (Claude Code) every day: the commits they co-wrote carry a co-author line, and in October 2026 the pattern search and two of its follow-up studies were reviewed by AI audit agents before any outcome was computed ([`alpha_patterns/audit/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/alpha_patterns/audit)). The checks above let a reader rerun the offline pipeline and compare every tracked figure with the artefact behind it, instead of taking the code, mine or a model's, on trust.
 
 ## Background
 
-Before working on blockchain research, I competed as a professional boxer in **France, the United States, Mexico and Colombia**.
-
-That background still influences how I approach investigations:
-
-**observe → test → adapt → repeat**
-
-I apply the same discipline to on-chain research: work from the evidence, challenge the first explanation, and keep the conclusion proportional to what the data can establish.
-
----
+Before this work I boxed professionally in France, the United States, Mexico and Colombia. Same habit on chain: observe, test, adapt, repeat.
 
 ## Contact
 
-For research, collaboration and professional inquiries:
-
-**[contact@teamdacunha.com](mailto:contact@teamdacunha.com)**
+[contact@teamdacunha.com](mailto:contact@teamdacunha.com)
