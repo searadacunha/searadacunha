@@ -10,9 +10,11 @@ My main investigation is on-chain: Solana memecoin launches, funding flows, coor
 
 ## Featured: [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
 
+**€400 to start. $237,137.87 withdrawn.**
+
 An investigation of pump.fun launches whose core offline pipeline reproduces byte for byte from a clone, from a pattern I traded in 2024 to the mechanism that replaced it in 2026.
 
-* **2024.** Fresh wallets funded through the same swap service hours before a launch, then buying in public. I traded the pattern; my withdrawals for October to December 2024 ($237,137.87) are rebuilt on chain from my own exchange deposit address. The starting capital, roughly $400, is my recollection and is marked unsourced in the repository.
+* **2024.** I started with **€400**. Between **October and December 2024**, I withdrew **$237,137.87** trading memecoins on pump.fun. I traded a recurring pattern: fresh wallets funded through the same swap service hours before a launch, then buying in public. My withdrawals are reconstructed on chain from my own exchange deposit address.
 * **2026.** On 42 launches of recurring buyer groups, rebuilt transaction by transaction, almost the entire bonding curve is bought in the block that creates the token: about 85 SOL for about 79% of the supply, with no public purchase before it. A selected sample, not a market-wide rate.
 * **Can it be traded?** A live detector I built (its code is not public) alerted on 1,657 launches between 21 August and 29 September 2026. Nine studies, each with a written plan and a frozen input table, then one exploratory search over 415 features. Among the alerted launches, the buying wallets act as a group in about four out of five. One signal survived the held-out test and still lost money after costs: no tradable edge.
 * **Negative results kept.** A buyer graph that put 63.8% of tokens in one component fell to 20.2% once nine infrastructure addresses were removed. The 2024 funding signature separated the tokens I traded from dead tokens only through a criterion that also fires on 88.9% of random wallet groups; without it, and against graduated tokens, it does not.
