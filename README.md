@@ -2,7 +2,7 @@
 
 **Python Data Pipelines & Automation · Blockchain Intelligence · Statistical Validation**
 
-Independent technical researcher, self-taught, building data and automation systems since December 2023. I take a badly defined question, build the tools to collect and rebuild the data, test whether my conclusions survive, and publish them so they can be checked.
+Independent technical researcher, self-taught, building data and automation systems since December 2023. I am also a **vibe coder**: I use AI coding agents heavily to turn ideas into working software fast, then I verify the output with tests, reproducible pipelines, hardware checks and explicit failure cases. I take a badly defined question, build the tools to collect and rebuild the data, test whether my conclusions survive, and publish them so they can be checked.
 
 My main investigation is on-chain: Solana memecoin launches, funding flows, coordinated wallets and the limits of predictive signals. The way of working is not tied to crypto.
 
@@ -44,6 +44,16 @@ Not public: the live detector's code (a separate project).
 **Observed is not inferred, and inferred is not attributed.** Wallets can be linked on chain without proving who controls them.
 
 I build with AI coding agents (Claude Code) every day: the commits they co-wrote carry a co-author line, and in October 2026 the pattern search and two of its follow-up studies were reviewed by AI audit agents before any outcome was computed ([`alpha_patterns/audit/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/alpha_patterns/audit)). The checks above let a reader rerun the offline pipeline and compare every tracked figure with the artefact behind it, instead of taking the code, mine or a model's, on trust.
+
+## Featured: [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
+
+A Spotify-to-YouTube/SmartTube bridge built for Android TV. It detects the current Spotify track, searches YouTube, identifies the correct recording and edition, rejects the wrong remix/live/edit when necessary, and opens the best matching video automatically on SmartTube.
+
+The project goes beyond a simple title search: it uses artist identity, edition parsing, duration checks, official-source preference and, when metadata is ambiguous, audio comparison. It also checks that Spotify has not changed tracks before sending, and includes a user-priority guard so the automation does not fight manual TV control.
+
+The repository documents real hardware tests, explainable matching decisions, stale-result cancellation, persistent deduplication, ADB delivery, CI on Python 3.12/3.13 and a 93-test suite. SmartTube is the recommended target; official YouTube can receive Android VIEW intents but does not yet have the same playback-state guarantees in this project.
+
+This is also a good example of how I use AI agents in practice: rapid iterative building, then tests and observable checks around the generated code instead of treating agent output as correct by default.
 
 ## Background
 
