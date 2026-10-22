@@ -1,81 +1,94 @@
 # Benjamin Da Cunha
 
-**Vibe Coder · AI Automation · Rapid Prototyping · Python Systems**
+**Vibe Coder · AI Builder · Automation · Rapid Prototyping · Python Systems**
 
-I am a self-taught **vibe coder and AI builder**. I use coding agents as my primary development environment to turn rough ideas into working software quickly: automations, data pipelines, API integrations, research tools, device-to-device workflows and experimental products.
+I build working software with AI agents.
 
-I am not specialized in one vertical. I like problems where the starting point is unclear and the useful output is something concrete that works. I can move from an idea to a prototype, test it against reality, break what is unreliable, and iterate fast.
+My strength is taking a vague problem, turning it into a concrete system, and getting it to work in the real world — fast. I use coding agents as my primary development environment, but I do not treat generated code as truth. I direct the build, connect the systems, test the weak points, debug failures and keep iterating until the result is useful.
 
-Blockchain analysis is one of the areas where I have applied that approach successfully — including an on-chain pattern I traded in 2024 — but it is not the limit of what I build.
+I am a generalist by design. I work across automation, APIs, data pipelines, research tooling, device integrations and experimental products. I am comfortable entering a domain I do not know yet, learning what matters, and building around the actual problem rather than a preferred stack.
+
+## What I do
+
+- Build AI-assisted tools, automations and internal products
+- Turn loosely defined ideas into working prototypes
+- Orchestrate coding agents across larger technical tasks
+- Connect APIs, data sources, desktop apps, mobile devices and hardware
+- Build Python pipelines, detectors, monitors and research systems
+- Add tests, CI, reproducibility and failure checks around AI-generated code
+- Investigate technical problems deeply when the product requires it
+
+**The goal is not to generate more code. The goal is to make the system work.**
 
 ---
 
-## What I build
+## Featured project — [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
 
-- AI-assisted software and internal tools
-- workflow automation and agent-driven systems
-- Python data pipelines and API integrations
-- rapid prototypes from loosely defined requirements
-- research tooling, detectors and monitoring systems
-- integrations across desktop, mobile, Android TV and connected devices
-- validation layers around AI-generated code: tests, CI, reproducibility and failure checks
+A Spotify-to-YouTube/SmartTube system for Android TV.
 
-I work with AI coding agents every day, especially Claude Code, and treat them as force multipliers rather than sources of truth. The speed comes from the agents; reliability comes from verification.
+Choose a song on Spotify. The system identifies the corresponding YouTube publication and opens it automatically on SmartTube.
 
-## Featured: [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
+What looks simple on the surface required solving several real problems:
 
-A Spotify-to-YouTube/SmartTube bridge built for Android TV. It detects the current Spotify track, searches YouTube, identifies the correct recording and edition, rejects the wrong remix/live/edit when necessary, and opens the best matching video automatically on SmartTube.
+- distinguish the correct recording from remixes, live versions and alternate edits
+- prefer official sources without blindly trusting titles
+- compare audio when metadata is not enough
+- cancel stale results when the Spotify track changes
+- prevent the automation from fighting manual TV control
+- deliver reliably over ADB
+- validate behavior on real hardware
 
-The project goes beyond a simple title search: it uses artist identity, edition parsing, duration checks, official-source preference and, when metadata is ambiguous, audio comparison. It also checks that Spotify has not changed tracks before sending, and includes a user-priority guard so the automation does not fight manual TV control.
+The repository includes CI on Python 3.12/3.13, a 93-test suite, explainable matching decisions, persistent deduplication and hardware-tested playback flows.
 
-The repository documents real hardware tests, explainable matching decisions, stale-result cancellation, persistent deduplication, ADB delivery, CI on Python 3.12/3.13 and a 93-test suite.
+This is how I like to build: start with a real inconvenience, use AI agents to move fast, connect multiple systems, then harden everything that can fail.
 
-This is a representative vibe-coding project for me: start with a practical problem, use agents to build fast, connect several systems, test on real hardware, then harden the weak points.
+---
 
-## Featured: [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
+## Featured investigation — [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
 
-**€400 to start. $237,137.87 withdrawn.**
+**Started with €400. Withdrew $237,137.87 between October and December 2024.**
 
-An investigation of pump.fun launches whose core offline pipeline reproduces byte for byte from a clone, from a pattern I traded in 2024 to a different launch mechanism measured in 2026.
+I found and traded a recurring on-chain pattern around pump.fun launches, then later rebuilt the research as a reproducible technical investigation.
 
-* **2024.** I started with **€400**. Between **October and December 2024**, I withdrew **$237,137.87** trading memecoins on pump.fun. I traded a recurring pattern: fresh wallets funded through the same swap service hours before a launch, then buying in public. My withdrawals are reconstructed on chain from my own exchange deposit address. This measures deposits, not a complete trading PnL.
-* **2026.** On 42 launches of recurring buyer groups, rebuilt transaction by transaction, almost the entire bonding curve is bought in the block that creates the token: about 85 SOL for about 79% of the supply. A selected sample, not a market-wide rate.
-* **Can it be traded?** A live detector I built (its code is not public) alerted on 1,657 launches between 21 August and 29 September 2026. Nine studies, each with a written plan and a frozen input table, then one exploratory search over 415 features. Among the alerted launches, the buying wallets act as a group in about four out of five. One signal survived the held-out test and still lost money after costs: no profitable strategy established under the tested conditions.
-* **Negative results kept.** A buyer graph that put 63.8% of tokens in one component fell to 20.2% once nine infrastructure addresses were removed. The 2024 funding signature separated the tokens I traded from dead tokens only through a criterion that also fires on 88.9% of random wallet groups; without it, and against graduated tokens, it does not.
+The repository is not a victory lap. It shows the full process: what worked, what failed, what looked predictive but was not, and how I tested those conclusions.
 
-## What the repository shows
+Highlights:
 
-| Skill | Where to look |
-|---|---|
-| Python data pipelines | [`code/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/code): one script per measurement, standard library only; [`run_all.py --strict`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/run_all.py) reruns the 22 offline scripts and checks their tables and JSON byte for byte against the committed ones |
-| API integration | [`rpc_client.py`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/rpc_client.py): a Solana RPC client with key rotation, a cooldown after HTTP 429 and bounded retries, where a failed call raises instead of returning an empty result; read-only calls to pump.fun, GeckoTerminal and Binance |
-| Automation and CI | [`ci.yml`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/.github/workflows/ci.yml) on Python 3.12 and 3.13: byte-for-byte reproduction, a ledger that checks 43 of the README's figures against their artefacts, 91 tests, `mypy --strict`, `ruff`, a publication gate |
-| Transaction analysis and fund tracing | [`02_cn_outflows.py`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/02_cn_outflows.py) (a swap service's hot-wallet outflows), [`exit_destination/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/exit_destination), [`funder_network/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/funder_network) |
-| Detection and false positives | [`a1_null_model.py`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/code/a1_null_model.py): a funding detector tested against random wallet groups; one of its criteria fired on 88.9% of them and was retired |
-| Statistical validation | [`post_detection_edge/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/post_detection_edge): signals locked before a held-out test, models written from scratch; cluster bootstraps, permutation and Fisher tests; a chained registry of every test run in the October 2026 search ([`alpha_patterns/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/alpha_patterns)) |
-| Data-quality controls | [`PITFALLS.md`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/docs/PITFALLS.md): an HTTP 403 that had become "no data", a network failure that looked like a result, a monitor that reported healthy while it was not |
-| Attribution discipline | [`METHODOLOGY.md`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/blob/main/docs/METHODOLOGY.md): observed, inferred and attributed kept apart; exchange infrastructure recorded as not established rather than assigned to a person |
+- transaction-by-transaction reconstruction of Solana launches
+- funding-flow and wallet-network analysis
+- live detection infrastructure
+- Python data pipelines and Solana RPC integration
+- false-positive testing and null models
+- held-out validation
+- permutation, Fisher and bootstrap tests
+- CI that reproduces committed outputs byte for byte
+- 91 tests, `mypy --strict`, `ruff` and publication checks
+- explicit separation between observed facts, inference and attribution
 
-Not public: the live detector's code (a separate project).
+One result matters as much as the successful trade: when later testing failed to establish a profitable strategy under the measured conditions, I kept the negative result.
 
-## How I work
+That is how I use AI-assisted development for serious work: speed up construction without lowering the standard of evidence.
 
-1. Start from the outcome, not from a preferred technology.
-2. Use AI agents to get to a working implementation quickly.
-3. Connect the real systems: APIs, devices, data sources, automation and interfaces.
-4. Test the parts that can silently fail.
-5. Keep iterating until the result is useful outside the demo.
+---
 
-For analytical work, I use the same discipline more formally: define the population, rebuild the chronology, test alternative explanations, measure false positives and keep negative results visible.
+## How I build
 
-**Observed is not inferred, and inferred is not attributed.**
+1. Define the result I actually want.
+2. Break the problem into parts an AI agent can execute and verify.
+3. Build the shortest path to a working version.
+4. Connect it to real data, APIs, devices or users.
+5. Test the failure modes, not just the happy path.
+6. Iterate until it survives outside the demo.
 
-The commits co-written by coding agents carry a co-author line. In the Solana research, AI audit agents also reviewed parts of the experimental process before outcomes were computed ([`alpha_patterns/audit/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/alpha_patterns/audit)).
+I use Claude Code and other coding agents heavily. When agents contribute to public code, I keep the co-author attribution visible.
 
+I care much more about whether a system works, can be checked and can survive edge cases than about who typed each line.
 
 ## Background
 
-Before this work I boxed professionally in France, the United States, Mexico and Colombia. Same habit on chain: observe, test, adapt, repeat.
+Before building software, I boxed professionally in France, the United States, Mexico and Colombia.
+
+Different field, same operating style: learn fast, adapt under pressure, test against reality and keep moving.
 
 ## Contact
 
