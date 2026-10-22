@@ -22,28 +22,6 @@ I am a generalist by design. I work across automation, APIs, data pipelines, res
 
 ---
 
-## Featured project — [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
-
-A Spotify-to-YouTube/SmartTube system for Android TV.
-
-Choose a song on Spotify. The system identifies the corresponding YouTube publication and opens it automatically on SmartTube.
-
-What looks simple on the surface required solving several real problems:
-
-- distinguish the correct recording from remixes, live versions and alternate edits
-- prefer official sources without blindly trusting titles
-- compare audio when metadata is not enough
-- cancel stale results when the Spotify track changes
-- prevent the automation from fighting manual TV control
-- deliver reliably over ADB
-- validate behavior on real hardware
-
-The repository includes CI on Python 3.12/3.13, a 93-test suite, explainable matching decisions, persistent deduplication and hardware-tested playback flows.
-
-This is how I like to build: start with a real inconvenience, use AI agents to move fast, connect multiple systems, then harden everything that can fail.
-
----
-
 ## Featured investigation — [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
 
 **Started with €400. Withdrew $237,137.87 between October and December 2024.**
@@ -68,6 +46,28 @@ Highlights:
 One result matters as much as the successful trade: when later testing failed to establish a profitable strategy under the measured conditions, I kept the negative result.
 
 That is how I use AI-assisted development for serious work: speed up construction without lowering the standard of evidence.
+
+---
+
+## Featured project — [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
+
+A Spotify-to-YouTube/SmartTube system for Android TV.
+
+Choose a song on Spotify. The system identifies the corresponding YouTube publication and opens it automatically on SmartTube.
+
+What looks simple on the surface required solving several real problems:
+
+- distinguish the correct recording from remixes, live versions and alternate edits
+- prefer official sources without blindly trusting titles
+- compare audio when metadata is not enough
+- cancel stale results when the Spotify track changes
+- prevent the automation from fighting manual TV control
+- deliver reliably over ADB
+- validate behavior on real hardware
+
+The repository includes CI on Python 3.12/3.13, a 93-test suite, explainable matching decisions, persistent deduplication and hardware-tested playback flows.
+
+This is how I like to build: start with a real inconvenience, use AI agents to move fast, connect multiple systems, then harden everything that can fail.
 
 ---
 
