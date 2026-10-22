@@ -1,95 +1,41 @@
 # Benjamin Da Cunha
 
-**Vibe Coder · AI Builder · Automation · Rapid Prototyping · Python Systems**
+**I build things with AI.**
 
-I build working software with AI agents.
+Self-taught vibe coder. I use Claude Code and other coding agents every day to turn ideas into working systems.
 
-My strength is taking a vague problem, turning it into a concrete system, and getting it to work in the real world — fast. I use coding agents as my primary development environment, but I do not treat generated code as truth. I direct the build, connect the systems, test the weak points, debug failures and keep iterating until the result is useful.
+I don't care much about staying in one lane. If something is useful, weird, difficult to automate, or interesting enough, I'll probably try to build it.
 
-I am a generalist by design. I work across automation, APIs, data pipelines, research tooling, device integrations and experimental products. I am comfortable entering a domain I do not know yet, learning what matters, and building around the actual problem rather than a preferred stack.
+## [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
 
-## What I do
+**€400 → $237,137.87 withdrawn in three months.**
 
-- Build AI-assisted tools, automations and internal products
-- Turn loosely defined ideas into working prototypes
-- Orchestrate coding agents across larger technical tasks
-- Connect APIs, data sources, desktop apps, mobile devices and hardware
-- Build Python pipelines, detectors, monitors and research systems
-- Add tests, CI, reproducibility and failure checks around AI-generated code
-- Investigate technical problems deeply when the product requires it
+In 2024 I found a recurring on-chain pattern around pump.fun launches and traded it.
 
-**The goal is not to generate more code. The goal is to make the system work.**
+Later I went back and tried to break my own thesis: rebuilt the transactions, traced the funding flows, wrote the tooling, tested false positives, ran held-out studies and published the negative results too.
 
----
+The repo became much bigger than the original trade: Python pipelines, Solana RPC tooling, detection systems, statistical validation, CI, reproducible outputs and a lot of evidence for what *didn't* work.
 
-## Featured investigation — [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
+It is probably the best representation of how I think.
 
-**Started with €400. Withdrew $237,137.87 between October and December 2024.**
+## [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
 
-I found and traded a recurring on-chain pattern around pump.fun launches, then later rebuilt the research as a reproducible technical investigation.
+I wanted Spotify to automatically become the right music video on my TV, so I built it.
 
-The repository is not a victory lap. It shows the full process: what worked, what failed, what looked predictive but was not, and how I tested those conclusions.
+Spotify track in → exact YouTube/SmartTube video out.
 
-Highlights:
+The annoying part was making “exact” actually mean exact: radio edits, remixes, live versions, bad metadata, stale searches, manual TV control. The project uses metadata, edition logic and audio comparison, then sends the result to Android TV over ADB.
 
-- transaction-by-transaction reconstruction of Solana launches
-- funding-flow and wallet-network analysis
-- live detection infrastructure
-- Python data pipelines and Solana RPC integration
-- false-positive testing and null models
-- held-out validation
-- permutation, Fisher and bootstrap tests
-- CI that reproduces committed outputs byte for byte
-- 91 tests, `mypy --strict`, `ruff` and publication checks
-- explicit separation between observed facts, inference and attribution
-
-One result matters as much as the successful trade: when later testing failed to establish a profitable strategy under the measured conditions, I kept the negative result.
-
-That is how I use AI-assisted development for serious work: speed up construction without lowering the standard of evidence.
+93 tests, real-hardware testing, and a lot of edge cases for something that started as “why doesn't Spotify just do this?”
 
 ---
 
-## Featured project — [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
+That is the kind of work I like.
 
-A Spotify-to-YouTube/SmartTube system for Android TV.
+Start with **“this should exist”**, use AI agents to move fast, stay on the hard decisions, and keep iterating until it works outside the demo.
 
-Choose a song on Spotify. The system identifies the corresponding YouTube publication and opens it automatically on SmartTube.
+Before software, I boxed professionally in France, the United States, Mexico and Colombia.
 
-What looks simple on the surface required solving several real problems:
-
-- distinguish the correct recording from remixes, live versions and alternate edits
-- prefer official sources without blindly trusting titles
-- compare audio when metadata is not enough
-- cancel stale results when the Spotify track changes
-- prevent the automation from fighting manual TV control
-- deliver reliably over ADB
-- validate behavior on real hardware
-
-The repository includes CI on Python 3.12/3.13, a 93-test suite, explainable matching decisions, persistent deduplication and hardware-tested playback flows.
-
-This is how I like to build: start with a real inconvenience, use AI agents to move fast, connect multiple systems, then harden everything that can fail.
-
----
-
-## How I build
-
-1. Define the result I actually want.
-2. Break the problem into parts an AI agent can execute and verify.
-3. Build the shortest path to a working version.
-4. Connect it to real data, APIs, devices or users.
-5. Test the failure modes, not just the happy path.
-6. Iterate until it survives outside the demo.
-
-I use Claude Code and other coding agents heavily. When agents contribute to public code, I keep the co-author attribution visible.
-
-I care much more about whether a system works, can be checked and can survive edge cases than about who typed each line.
-
-## Background
-
-Before building software, I boxed professionally in France, the United States, Mexico and Colombia.
-
-Different field, same operating style: learn fast, adapt under pressure, test against reality and keep moving.
-
-## Contact
+Different arena. Same instinct: **figure it out under pressure.**
 
 [contact@teamdacunha.com](mailto:contact@teamdacunha.com)
