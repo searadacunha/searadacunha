@@ -1,12 +1,36 @@
 # Benjamin Da Cunha
 
-**Python Data Pipelines & Automation · Blockchain Intelligence · Statistical Validation**
+**Vibe Coder · AI Automation · Rapid Prototyping · Python Systems**
 
-Independent technical researcher, self-taught, building data and automation systems since December 2023. I am also a **vibe coder**: I use AI coding agents heavily to turn ideas into working software fast, then I verify the output with tests, reproducible pipelines, hardware checks and explicit failure cases. I take a badly defined question, build the tools to collect and rebuild the data, test whether my conclusions survive, and publish them so they can be checked.
+I am a self-taught **vibe coder and AI builder**. I use coding agents as my primary development environment to turn rough ideas into working software quickly: automations, data pipelines, API integrations, research tools, device-to-device workflows and experimental products.
 
-My main investigation is on-chain: Solana memecoin launches, funding flows, coordinated wallets and the limits of predictive signals. The way of working is not tied to crypto.
+I am not specialized in one vertical. I like problems where the starting point is unclear and the useful output is something concrete that works. I can move from an idea to a prototype, test it against reality, break what is unreliable, and iterate fast.
+
+Blockchain analysis is one of the areas where I have applied that approach successfully — including an on-chain pattern I traded in 2024 — but it is not the limit of what I build.
 
 ---
+
+## What I build
+
+- AI-assisted software and internal tools
+- workflow automation and agent-driven systems
+- Python data pipelines and API integrations
+- rapid prototypes from loosely defined requirements
+- research tooling, detectors and monitoring systems
+- integrations across desktop, mobile, Android TV and connected devices
+- validation layers around AI-generated code: tests, CI, reproducibility and failure checks
+
+I work with AI coding agents every day, especially Claude Code, and treat them as force multipliers rather than sources of truth. The speed comes from the agents; reliability comes from verification.
+
+## Featured: [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
+
+A Spotify-to-YouTube/SmartTube bridge built for Android TV. It detects the current Spotify track, searches YouTube, identifies the correct recording and edition, rejects the wrong remix/live/edit when necessary, and opens the best matching video automatically on SmartTube.
+
+The project goes beyond a simple title search: it uses artist identity, edition parsing, duration checks, official-source preference and, when metadata is ambiguous, audio comparison. It also checks that Spotify has not changed tracks before sending, and includes a user-priority guard so the automation does not fight manual TV control.
+
+The repository documents real hardware tests, explainable matching decisions, stale-result cancellation, persistent deduplication, ADB delivery, CI on Python 3.12/3.13 and a 93-test suite.
+
+This is a representative vibe-coding project for me: start with a practical problem, use agents to build fast, connect several systems, test on real hardware, then harden the weak points.
 
 ## Featured: [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
 
@@ -36,24 +60,18 @@ Not public: the live detector's code (a separate project).
 
 ## How I work
 
-1. Write a falsifiable question and fix the population before computing any rate.
-2. Rebuild the transactions and the chronology from the raw data.
-3. Try to break the result: shared infrastructure, selection, missing data, lookahead, multiple testing, costs.
-4. Publish what survives, and keep the corrections visible.
+1. Start from the outcome, not from a preferred technology.
+2. Use AI agents to get to a working implementation quickly.
+3. Connect the real systems: APIs, devices, data sources, automation and interfaces.
+4. Test the parts that can silently fail.
+5. Keep iterating until the result is useful outside the demo.
 
-**Observed is not inferred, and inferred is not attributed.** Wallets can be linked on chain without proving who controls them.
+For analytical work, I use the same discipline more formally: define the population, rebuild the chronology, test alternative explanations, measure false positives and keep negative results visible.
 
-I build with AI coding agents (Claude Code) every day: the commits they co-wrote carry a co-author line, and in October 2026 the pattern search and two of its follow-up studies were reviewed by AI audit agents before any outcome was computed ([`alpha_patterns/audit/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/alpha_patterns/audit)). The checks above let a reader rerun the offline pipeline and compare every tracked figure with the artefact behind it, instead of taking the code, mine or a model's, on trust.
+**Observed is not inferred, and inferred is not attributed.**
 
-## Featured: [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
+The commits co-written by coding agents carry a co-author line. In the Solana research, AI audit agents also reviewed parts of the experimental process before outcomes were computed ([`alpha_patterns/audit/`](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over/tree/main/alpha_patterns/audit)).
 
-A Spotify-to-YouTube/SmartTube bridge built for Android TV. It detects the current Spotify track, searches YouTube, identifies the correct recording and edition, rejects the wrong remix/live/edit when necessary, and opens the best matching video automatically on SmartTube.
-
-The project goes beyond a simple title search: it uses artist identity, edition parsing, duration checks, official-source preference and, when metadata is ambiguous, audio comparison. It also checks that Spotify has not changed tracks before sending, and includes a user-priority guard so the automation does not fight manual TV control.
-
-The repository documents real hardware tests, explainable matching decisions, stale-result cancellation, persistent deduplication, ADB delivery, CI on Python 3.12/3.13 and a 93-test suite. SmartTube is the recommended target; official YouTube can receive Android VIEW intents but does not yet have the same playback-state guarantees in this project.
-
-This is also a good example of how I use AI agents in practice: rapid iterative building, then tests and observable checks around the generated code instead of treating agent output as correct by default.
 
 ## Background
 
