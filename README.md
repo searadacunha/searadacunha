@@ -2,7 +2,7 @@
 
 **I build things with AI.**
 
-Self-taught vibe coder. I use Claude Code and other coding agents every day to turn ideas into working systems.
+Self-taught vibe coder. I use Claude Code and Codex every day to turn ideas into working systems.
 
 I don't care much about staying in one lane. If something is useful, weird, difficult to automate, or interesting enough, I'll probably try to build it.
 
