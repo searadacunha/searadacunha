@@ -18,15 +18,31 @@ The repo became much bigger than the original trade: Python pipelines, Solana RP
 
 It is probably the best representation of how I think.
 
-## [Spotify With YouTube](https://github.com/searadacunha/spotify-smarttube-bridge)
+## [Spotify With YouTube](https://github.com/searadacunha/Spotify-With-Youtube)
 
 I wanted Spotify to automatically become the right music video on my TV, so I built it.
 
-Spotify track in → exact YouTube/SmartTube video out.
+Spotify track in → edition-aware YouTube matching → SmartTube on Android TV.
 
-The annoying part was making “exact” actually mean exact: radio edits, remixes, live versions, bad metadata, stale searches, manual TV control. The project uses metadata, edition logic and audio comparison, then sends the result to Android TV over ADB.
+The hard part was not opening a video. It was handling radio edits, remixes, live recordings, bad matches, stale searches and the fact that someone might be using the TV. The bridge combines metadata, audio comparison and a state-aware ADB handoff.
 
-93 tests, real-hardware testing, and a lot of edge cases for something that started as “why doesn't Spotify just do this?”
+107 unit tests and real-TV playback runs. The README separates what worked on hardware from what still needs testing there.
+
+## [YouTube Edit Ultra](https://github.com/searadacunha/YouTube-Edit-Ultra)
+
+I wanted music-driven sports edits without cutting a goal, knockout or combination in half just to hit the beat.
+
+It's a local Python/FFmpeg editing pipeline: source footage, action candidates or annotated sequences, music alignment, a rendered montage, thumbnail and YouTube metadata. Publishing is optional.
+
+The tricky part is deciding *where an action really begins and ends*. The code protects annotated event windows and treats automatic motion detection as a starting point, not proof that it understood the play.
+
+## [Stop-Bullshiting](https://github.com/searadacunha/Stop-Bullshiting)
+
+Coding agents can read thousands of lines when the useful answer is buried in twenty. I wanted to keep the signal without losing the original output.
+
+A local CLI for reducing noisy logs, finding exact lines and Python symbols, restoring full outputs and keeping project notes. It can connect to Claude Code and Codex through optional integrations and exposes tools over MCP.
+
+It measures actual character reduction. It does **not** manufacture tokens or bypass account limits.
 
 ---
 
