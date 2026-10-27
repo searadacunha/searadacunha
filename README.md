@@ -1,10 +1,10 @@
 # Benjamin Da Cunha
 
-**Independent on-chain researcher · Python systems builder · Former professional boxer**
+**Vibe coder · Trader & gambler · Independent on-chain researcher · Former professional boxer**
 
-I investigate on-chain behaviour and build local-first software to solve specific problems. My work ranges from Solana transaction analysis and statistical validation to media automation and tooling for coding agents.
+I trade crypto, investigate on-chain activity and build software through vibe coding. My projects range from Solana transaction analysis and statistical testing to media automation and tools for coding agents.
 
-I use Python, raw data, reproducible tests, Claude Code and Codex. AI helps me ship faster; **the code, tests and evidence still have to hold up**.
+I use Python, Claude Code and Codex to turn ideas into working tools. I test what I build and share code, methods and evidence from my research.
 
 ## Selected work
 
