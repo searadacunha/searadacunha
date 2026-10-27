@@ -48,6 +48,6 @@ A local CLI for reducing noisy command output, searching exact source lines and 
 
 ---
 
-Professional boxing took me from France to the United States, Mexico and Colombia. I’m self-taught in Python and on-chain research, and I build my own tools for blockchain investigations, automation and video production.
+Before this work I boxed professionally in France, the United States, Mexico and Colombia. Same habit on chain: **observe, test, adapt, repeat.**
 
 **Contact:** [contact@teamdacunha.com](mailto:contact@teamdacunha.com)
