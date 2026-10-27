@@ -1,68 +1,53 @@
 # Benjamin Da Cunha
 
-**I build things with AI.**
+**Independent on-chain researcher · Python systems builder · Former professional boxer**
 
-Independent builder and on-chain researcher. Self-taught, using Claude Code and Codex to turn ideas into working tools.
+I investigate on-chain behaviour and build local-first software to solve specific problems. My work ranges from Solana transaction analysis and statistical validation to media automation and tooling for coding agents.
 
-My projects start with a concrete problem: connect Spotify to the right music video, preserve a complete action in a sports edit, or make an agent's terminal output useful without losing the original.
+I use Python, raw data, reproducible tests, Claude Code and Codex. AI helps me ship faster; **the code, tests and evidence still have to hold up**.
 
-[Contact](mailto:contact@teamdacunha.com) · [All repositories](https://github.com/searadacunha?tab=repositories)
+## Selected work
 
-## [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over)
+### [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over) · On-chain research
 
-**€400 → $237,137.87 withdrawn in three months.**
+**From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.** The withdrawal figure is not itself a net-profit calculation.
 
-In 2024 I found a recurring on-chain pattern around pump.fun launches and traded it.
+A documented investigation of Solana / pump.fun activity: RPC extraction, wallet and funding-flow reconstruction, false-positive analysis, held-out testing and reproducible artifacts. The repository publishes failed hypotheses alongside positive findings instead of presenting backtests as guaranteed trading edges.
 
-Later I went back and tried to break my own thesis: rebuilt the transactions, traced the funding flows, wrote the tooling, tested false positives, ran held-out studies and published the negative results too.
+**Focus:** blockchain intelligence · transaction analysis · Python pipelines · statistical falsification
 
-The repo became much bigger than the original trade: Python pipelines, Solana RPC tooling, detection systems, statistical validation, CI, reproducible outputs and a lot of evidence for what *didn't* work.
+### [Spotify With YouTube](https://github.com/searadacunha/Spotify-With-Youtube) · TV automation
 
-It is probably the best representation of how I think.
+[![Tests](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml/badge.svg)](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml)
 
-## Tools
+A local bridge that follows a Spotify track and selects a video for SmartTube on Android TV. It handles radio edits, remixes, source verification and optional audio comparison. Its ADB controller backs off if another app or user takes control of the TV.
 
-| Project | What it does | Built with |
-| --- | --- | --- |
-| [**YouTube Edit Ultra**](https://github.com/searadacunha/YouTube-Edit-Ultra) | Builds music-driven sports edits with protected action windows, thumbnails and upload metadata. | Python · FFmpeg |
-| [**Spotify With YouTube**](https://github.com/searadacunha/Spotify-With-Youtube) | Matches Spotify tracks to YouTube videos and hands playback to SmartTube while respecting manual TV use. | Python · ADB · SQLite |
-| [**Stop-Bullshiting**](https://github.com/searadacunha/Stop-Bullshiting) | Reduces noisy terminal output, retrieves exact source lines and keeps full outputs available locally. | Python · CLI · MCP |
+**Focus:** Python · ADB · media metadata · audio matching · SQLite · hardware-aware automation
 
-### YouTube Edit Ultra
+**Validation:** unit-tested workflows and documented real-TV playback trials; not every manual-override scenario has been hardware-tested.
 
-Sports edits should keep the goal, knockout or combination intact. This local pipeline combines source footage, action candidates or annotated sequences, music alignment and FFmpeg rendering. Publishing is optional.
+### [YouTube Edit Ultra](https://github.com/searadacunha/YouTube-Edit-Ultra) · Sports editing
 
-The difficult part is deciding where an action begins and ends. Annotated event windows are protected; automatic motion detection produces candidates that still need review.
+[![Quality checks](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml)
 
-[Quick start and examples →](https://github.com/searadacunha/YouTube-Edit-Ultra#readme)
+A Python/FFmpeg pipeline for assembling sports footage and music into local videos, thumbnails, storyboards and publishing metadata. The edit planner preserves supplied action windows instead of cutting a documented goal or combination to land on a beat.
 
-### Spotify With YouTube
+**Focus:** Python · FFmpeg · event-driven editing · music alignment · optional YouTube upload
 
-Choose the track in Spotify; watch its video in SmartTube. The bridge considers artists, radio edits, remixes, live recordings and audio similarity before handing playback to Android TV.
+**Limit:** automatic motion detection proposes candidates; accurate event boundaries require annotations or reliable external spotting.
 
-It distinguishes verified matches from popularity-based fallbacks, discards stale searches and tracks whether it still owns the TV session. The documentation separates recorded hardware observations from automated tests and checks still to perform.
+### [Stop-Bullshiting](https://github.com/searadacunha/Stop-Bullshiting) · Agent tooling
 
-[Setup, matching logic and verification →](https://github.com/searadacunha/Spotify-With-Youtube#readme)
+[![CI](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml)
 
-### Stop-Bullshiting
+A local CLI for reducing noisy command output, searching exact source lines and Python symbols, keeping project notes and recovering original logs. Optional Claude Code and Codex integrations, plus an MCP interface.
 
-Coding agents can read thousands of lines when the useful answer is buried in twenty. This CLI reduces noisy logs, finds exact lines and Python symbols, restores full outputs and keeps project notes. Optional integrations connect it to Claude Code, Codex and MCP clients.
+**Focus:** Python · CLI · MCP · AST · SQLite · local-first workflows
 
-It measures character reduction. It does **not** manufacture tokens, expand subscriptions or bypass account limits.
-
-[Installation, commands and integrations →](https://github.com/searadacunha/Stop-Bullshiting#readme)
-
-## How I work
-
-- Start with a problem I actually have.
-- Use AI agents to move quickly, then inspect the code and test the behavior.
-- Keep measurements, limitations and negative results visible.
-- Make the next person's first run easier: clear setup, concrete examples and useful diagnostics.
+**Limit:** measures character reduction and reads available usage logs; it does **not** generate tokens or bypass provider quotas.
 
 ---
 
-Before software, I boxed professionally in France, the United States, Mexico and Colombia.
+Previously, I boxed professionally in France, the United States, Mexico and Colombia. The same emphasis on preparation, execution and post-mortem analysis now informs my technical work.
 
-Different arena. Same instinct: **figure it out under pressure.**
-
-[contact@teamdacunha.com](mailto:contact@teamdacunha.com)
+**Contact:** [contact@teamdacunha.com](mailto:contact@teamdacunha.com)
