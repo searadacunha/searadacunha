@@ -22,7 +22,7 @@ A local bridge that follows a Spotify track and selects a video for SmartTube on
 
 **Focus:** Python · ADB · media metadata · audio matching · SQLite · hardware-aware automation
 
-**Validation:** unit-tested workflows and documented real-TV playback trials; not every manual-override scenario has been hardware-tested.
+**Validation:** unit-tested workflows and documented real-TV playback trials.
 
 ### [YouTube Edit Ultra](https://github.com/searadacunha/YouTube-Edit-Ultra) · Sports editing
 
@@ -31,8 +31,6 @@ A local bridge that follows a Spotify track and selects a video for SmartTube on
 A Python/FFmpeg pipeline for assembling sports footage and music into local videos, thumbnails, storyboards and publishing metadata. The edit planner preserves supplied action windows instead of cutting a documented goal or combination to land on a beat.
 
 **Focus:** Python · FFmpeg · event-driven editing · music alignment · optional YouTube upload
-
-**Limit:** automatic motion detection proposes candidates; accurate event boundaries require annotations or reliable external spotting.
 
 ### [Stop-Bullshiting](https://github.com/searadacunha/Stop-Bullshiting) · Agent tooling
 
