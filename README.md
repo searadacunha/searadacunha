@@ -1,6 +1,6 @@
 # Benjamin Da Cunha
 
-**Vibe coder · Trader & gambler · Independent on-chain researcher · Former professional boxer**
+**Vibe coder · Gambler... I mean trader · Independent on-chain researcher · Former professional boxer**
 
 I trade crypto, investigate on-chain activity and build software through vibe coding. My projects range from Solana transaction analysis and statistical testing to media automation and tools for coding agents.
 
