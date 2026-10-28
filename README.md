@@ -12,15 +12,11 @@ I trade crypto, gamble on Polymarket, investigate insider trading, and vibe-code
 
 A documented investigation into memecoin manipulation on pump.fun: RPC data extraction, wallet transaction and funding-flow reconstruction, false-positive analysis, and publication of reproducible findings.
 
-**Focus:** blockchain intelligence · transaction analysis · Python pipelines · insider trading
-
 ### [Spotify With YouTube](https://github.com/searadacunha/Spotify-With-Youtube) · TV automation
 
 [![Tests](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml/badge.svg)](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml)
 
 A local bridge that follows a Spotify track and selects a video for SmartTube on Android TV. It handles radio edits, remixes, source verification and optional audio comparison. Its ADB controller backs off if another app or user takes control of the TV.
-
-**Focus:** Python · ADB · media metadata · audio matching · SQLite · hardware-aware automation
 
 ### [YouTube Edit Ultra](https://github.com/searadacunha/YouTube-Edit-Ultra) · Sports editing
 
@@ -28,18 +24,14 @@ A local bridge that follows a Spotify track and selects a video for SmartTube on
 
 A Python/FFmpeg pipeline for assembling sports footage and music into local videos, thumbnails, storyboards and publishing metadata.
 
-**Focus:** Python · FFmpeg · event-driven editing · music alignment · optional YouTube upload
-
 ### [Stop-Bullshiting](https://github.com/searadacunha/Stop-Bullshiting) · Agent tooling
 
 [![CI](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml)
 
 A local CLI for reducing noisy command output, searching exact source lines and Python symbols, keeping project notes and recovering original logs.
 
-**Focus:** Python · CLI · MCP · AST · SQLite · local-first workflows
-
 ---
 
-Before this work I boxed professionally in France, the United States, Mexico and Colombia. Same habit on chain: **observe, test, adapt, repeat.**
+Before this work I boxed professionally in France, the United States, Mexico and Colombia. 7-5-0 6KO
 
 **Contact:** [contact@teamdacunha.com](mailto:contact@teamdacunha.com)
