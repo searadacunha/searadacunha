@@ -1,6 +1,6 @@
 # Benjamin Da Cunha
 
-**Vibe coder · Gambler... I mean Trader · Independent on-chain researcher · Former professional boxer**
+**Vibe coder · Gambler... I mean Trader · Independent on-chain researcher · Professional boxer**
 
 I trade crypto, gamble on Polymarket, investigate insider trading, and vibe-code whatever I need, whenever I need it.
 
@@ -32,6 +32,6 @@ A local CLI for reducing noisy command output, searching exact source lines and 
 
 ---
 
-Before this work I boxed professionally in France, the United States, Mexico and Colombia. 7-5-0 6KO
+I also do boxing professionally. I fought in France, United States, Mexico and Colombia. 7-5-0 6KO I'm not your average coder.
 
 **Contact:** [contact@teamdacunha.com](mailto:contact@teamdacunha.com)
