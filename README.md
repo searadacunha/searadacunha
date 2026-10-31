@@ -2,7 +2,7 @@
 
 **Gambler... I mean Trader · Vibe coder · Independent on-chain researcher**
 
-I trade crypto, gamble on Polymarket, investigate insider trading, and vibe-code whatever I need, whenever I need it.
+I'm into memecoins and Polymarket, but more seriously, I investigate insider trading and vibe-code whatever I need, whenever I need it.
 
 ## Selected work
 
