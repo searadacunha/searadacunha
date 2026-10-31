@@ -1,6 +1,6 @@
 # Benjamin Da Cunha
 
-**Gambler... I mean Trader · Vibe coder · Independent on-chain researcher**
+**Gambler... I mean Trader · Vibe coder · On-chain researcher**
 
 ---
 
