@@ -30,6 +30,6 @@ A local CLI for reducing noisy command output, searching exact source lines and 
 
 ---
 
-I also do boxing professionally. I fought in France, United States, Mexico and Colombia. 7-5-0 6KO
+If you google me, yes it's me. I'm also a professional boxer. I fought in France, United States, Mexico and Colombia. 7-5-0 6KO
 
 **Contact:** [contact@teamdacunha.com](mailto:contact@teamdacunha.com)
