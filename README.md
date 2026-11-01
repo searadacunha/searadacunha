@@ -2,9 +2,7 @@
 
 **Vibe coder · Gambler... I mean Trader · Independent on-chain researcher · Former professional boxer**
 
-I trade crypto, investigate on-chain activity and build software through vibe coding. My projects range from Solana transaction analysis and statistical testing to media automation and tools for coding agents.
-
-I use Python, Claude Code and Codex to turn ideas into working tools. I test what I build and share code, methods and evidence from my research.
+I trade crypto, gamble on Polymarket, investigate insider trading, and vibe-code whatever I need, whenever I need it.
 
 ## Selected work
 
