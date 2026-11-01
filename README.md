@@ -2,8 +2,6 @@
 
 **Gambler... I mean Trader · Vibe coder · Independent on-chain researcher**
 
-I'm into memecoins and Polymarket, but more seriously, I investigate insider trading and vibe-code whatever I need, whenever I need it.
-
 ## Selected work
 
 ### [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over) · On-chain research
