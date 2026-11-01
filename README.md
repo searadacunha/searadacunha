@@ -10,9 +10,9 @@ I trade crypto, gamble on Polymarket, investigate insider trading, and vibe-code
 
 **From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.**
 
-A documented investigation of Solana / pump.fun activity: RPC extraction, wallet and funding-flow reconstruction, false-positive analysis, held-out testing and reproducible artifacts. The repository publishes failed hypotheses alongside positive findings instead of presenting backtests as guaranteed trading edges.
+A documented investigation into memecoin manipulation on pump.fun: RPC data extraction, wallet transaction and funding-flow reconstruction, false-positive analysis, and publication of reproducible findings.
 
-**Focus:** blockchain intelligence · transaction analysis · Python pipelines · statistical falsification
+**Focus:** blockchain intelligence · transaction analysis · Python pipelines · insider trading
 
 ### [Spotify With YouTube](https://github.com/searadacunha/Spotify-With-Youtube) · TV automation
 
@@ -22,13 +22,11 @@ A local bridge that follows a Spotify track and selects a video for SmartTube on
 
 **Focus:** Python · ADB · media metadata · audio matching · SQLite · hardware-aware automation
 
-**Validation:** unit-tested workflows and documented real-TV playback trials.
-
 ### [YouTube Edit Ultra](https://github.com/searadacunha/YouTube-Edit-Ultra) · Sports editing
 
 [![Quality checks](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml)
 
-A Python/FFmpeg pipeline for assembling sports footage and music into local videos, thumbnails, storyboards and publishing metadata. The edit planner preserves supplied action windows instead of cutting a documented goal or combination to land on a beat.
+A Python/FFmpeg pipeline for assembling sports footage and music into local videos, thumbnails, storyboards and publishing metadata.
 
 **Focus:** Python · FFmpeg · event-driven editing · music alignment · optional YouTube upload
 
@@ -36,7 +34,7 @@ A Python/FFmpeg pipeline for assembling sports footage and music into local vide
 
 [![CI](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml)
 
-A local CLI for reducing noisy command output, searching exact source lines and Python symbols, keeping project notes and recovering original logs. Optional Claude Code and Codex integrations, plus an MCP interface.
+A local CLI for reducing noisy command output, searching exact source lines and Python symbols, keeping project notes and recovering original logs.
 
 **Focus:** Python · CLI · MCP · AST · SQLite · local-first workflows
 
