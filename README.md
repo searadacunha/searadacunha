@@ -30,6 +30,6 @@ A local CLI for reducing noisy command output, searching exact source lines and 
 
 ---
 
-If you google me, yes it's me. I'm also a professional boxer. I fought in France, United States, Mexico and Colombia. 7-5-0 6KO
+If you google me, yes it's me. I'm also a professional boxer. I fought in France, United States, Mexico and Colombia. 7-5-0 6KO I also fought in 2018 the IBF world champion Raymond Muratalla in Indio, California live on ESPN.
 
 **Contact:** [contact@teamdacunha.com](mailto:contact@teamdacunha.com)
