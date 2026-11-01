@@ -1,9 +1,5 @@
 # Benjamin Da Cunha
 
-**Gambler · Vibe coder · On-chain researcher**
-
----
-
 ### [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over) · On-chain research
 
 **From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.**
