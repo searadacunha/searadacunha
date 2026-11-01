@@ -1,6 +1,6 @@
 # Benjamin Da Cunha
 
-**Gambler... I mean Trader · Vibe coder · Independent on-chain researcher · Professional boxer**
+**Gambler... I mean Trader · Vibe coder · Independent on-chain researcher**
 
 I trade crypto, gamble on Polymarket, investigate insider trading, and vibe-code whatever I need, whenever I need it.
 
