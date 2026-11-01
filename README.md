@@ -8,7 +8,7 @@ I trade crypto, gamble on Polymarket, investigate insider trading, and vibe-code
 
 ### [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over) · On-chain research
 
-**From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.** The withdrawal figure is not itself a net-profit calculation.
+**From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.**
 
 A documented investigation of Solana / pump.fun activity: RPC extraction, wallet and funding-flow reconstruction, false-positive analysis, held-out testing and reproducible artifacts. The repository publishes failed hypotheses alongside positive findings instead of presenting backtests as guaranteed trading edges.
 
