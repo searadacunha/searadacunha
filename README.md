@@ -38,8 +38,6 @@ A local CLI for reducing noisy command output, searching exact source lines and 
 
 **Focus:** Python · CLI · MCP · AST · SQLite · local-first workflows
 
-**Limit:** measures character reduction and reads available usage logs; it does **not** generate tokens or bypass provider quotas.
-
 ---
 
 Before this work I boxed professionally in France, the United States, Mexico and Colombia. Same habit on chain: **observe, test, adapt, repeat.**
