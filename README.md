@@ -10,16 +10,16 @@ A documented investigation into memecoin manipulation on pump.fun: turning raw R
 
 [![Tests](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml/badge.svg)](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml)
 
-A local bridge that follows a Spotify track and selects a video for SmartTube on Android TV. It handles radio edits, remixes, source verification and optional audio comparison. Its ADB controller backs off if another app or user takes control of the TV.
+A local bridge that turns Spotify listening into a music-video experience on Android TV, selecting matching videos for SmartTube with support for radio edits, remixes, source verification, and optional audio comparison. Its ADB controller automatically steps back when another app or the user takes control of the TV.
 
 ### [YouTube Edit Ultra](https://github.com/searadacunha/YouTube-Edit-Ultra) · Sports editing
 
 [![Quality checks](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml)
 
-A Python/FFmpeg pipeline for assembling sports footage and music into local videos, thumbnails, storyboards and publishing metadata.
+A local Python/FFmpeg pipeline that streamlines sports video production, turning footage and music into edited videos, thumbnails, storyboards, and publishing metadata through a unified automated workflow.
 
 ### [Stop-Bullshiting](https://github.com/searadacunha/Stop-Bullshiting) · Agent tooling
 
 [![CI](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml)
 
-A local CLI for reducing noisy command output, searching exact source lines and Python symbols, keeping project notes and recovering original logs.
+A local CLI built to give coding agents clearer context and traceable evidence, combining concise command output, exact source-line and Python-symbol search, persistent project notes, and recoverable original logs.
