@@ -4,7 +4,7 @@
 
 **From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.**
 
-A documented investigation into memecoin manipulation on pump.fun: RPC data extraction, wallet transaction and funding-flow reconstruction, false-positive analysis, and publication of reproducible findings.
+A documented investigation into memecoin manipulation on pump.fun: turning raw RPC data into reproducible on-chain evidence through wallet tracing, funding-network reconstruction, and rigorous analysis of coordinated trading patterns.
 
 ### [Spotify With YouTube](https://github.com/searadacunha/Spotify-With-Youtube) · TV automation
 
