@@ -5,21 +5,3 @@
 **From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.**
 
 A documented investigation into memecoin manipulation on pump.fun: turning raw RPC data into reproducible on-chain evidence through wallet tracing, funding-network reconstruction, and rigorous analysis of coordinated trading patterns.
-
-### [Spotify With YouTube](https://github.com/searadacunha/Spotify-With-Youtube) · TV automation
-
-[![Tests](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml/badge.svg)](https://github.com/searadacunha/Spotify-With-Youtube/actions/workflows/tests.yml)
-
-A local bridge that turns Spotify listening into a music-video experience on Android TV, selecting matching videos for SmartTube with support for radio edits, remixes, source verification, and optional audio comparison. Its ADB controller automatically steps back when another app or the user takes control of the TV.
-
-### [YouTube Edit Ultra](https://github.com/searadacunha/YouTube-Edit-Ultra) · Sports editing
-
-[![Quality checks](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/YouTube-Edit-Ultra/actions/workflows/ci.yml)
-
-A local Python/FFmpeg pipeline that streamlines sports video production, turning footage and music into edited videos, thumbnails, storyboards, and publishing metadata through a unified automated workflow.
-
-### [Stop-Bullshiting](https://github.com/searadacunha/Stop-Bullshiting) · Agent tooling
-
-[![CI](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml/badge.svg)](https://github.com/searadacunha/Stop-Bullshiting/actions/workflows/ci.yml)
-
-A local CLI built to give coding agents clearer context and traceable evidence, combining concise command output, exact source-line and Python-symbol search, persistent project notes, and recoverable original logs.
