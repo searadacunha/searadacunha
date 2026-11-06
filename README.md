@@ -6,7 +6,7 @@
 
 I identified recurring patterns of coordinated memecoin accumulation on Solana and used those publicly visible signals to trade while the opportunity lasted. When the pattern changed, I traced the wallets, funding routes and transactions to investigate the mechanics behind it.
 
-### [Dark MAGA: Did Elon Know?](https://github.com/searadacunha/Dark-MAGA) · On-chain investigation
+### [DARK MAGA](https://github.com/searadacunha/Dark-MAGA) · On-chain investigation
 
 **Did Elon know?** A Dark MAGA token launched before Elon Musk changed his X profile picture. I investigated early buyers, interconnected wallets, trading profits and cross-chain fund flows to test whether anyone was positioned with advance knowledge.
 
