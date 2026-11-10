@@ -2,7 +2,7 @@
 
 ### [Why Solana Memecoins Are Over](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over) · On-chain manipulation and trading
 
-**From roughly €400 in starting capital to $237,137.87 withdrawn between October and December 2024.**
+**I did, starting with approximately €400 and withdrawing $237,137.87 between October and December 2024.**
 
 I identified recurring patterns of coordinated memecoin accumulation on Solana and used those publicly visible signals to trade while the opportunity lasted. When the pattern changed, I traced the wallets, funding routes and transactions to investigate the mechanics behind it.
 
