@@ -1,5 +1,7 @@
 # Benjamin Da Cunha
 
+<p align="center"><img src="assets/readme-hero.svg" width="100%" alt="searadacunha visual montage" /></p>
+
 ### [WHY SOLANA MEMECOINS ARE OVER](https://github.com/searadacunha/Why-Solana-Memecoins-Are-Over) · On-chain manipulation and trading
 
 **I started with approximately €400 and withdrawed $237,137.87 between October and December 2024.**
