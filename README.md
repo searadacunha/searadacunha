@@ -18,7 +18,7 @@ A broad investigation into prediction markets, from geopolitical events to the B
 
 ---
 
-## Development credits
+## Contributors and AI assistance
 
 **ChatGPT (OpenAI):** assisted with drafting and revising this GitHub profile and presentation of the research projects. Project ownership and factual claims remain Benjamin Da Cunha's.
 
