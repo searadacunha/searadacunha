@@ -15,11 +15,3 @@ A broad investigation into prediction markets, from geopolitical events to the B
 ### [DARK MAGA](https://github.com/searadacunha/Dark-MAGA) · On-chain investigation
 
 **Did Elon know?** A Dark MAGA token launched before Elon Musk changed his X profile picture. I investigated early buyers, interconnected wallets, trading profits and cross-chain fund flows to test whether anyone was positioned with advance knowledge.
-
----
-
-## Contributors and AI assistance
-
-**ChatGPT (OpenAI):** assisted with drafting and revising this GitHub profile and presentation of the research projects. Project ownership and factual claims remain Benjamin Da Cunha's.
-
-These credits disclose AI assistance; they do not assign human authorship, independently verify research findings or imply that an AI tool is a GitHub account contributor.
