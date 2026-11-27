@@ -1,6 +1,6 @@
 # Benjamin Da Cunha
 
-Independent on-chain investigator. My research is organized around two primary repositories.
+Independent on-chain investigator. Former pro boxer.
 
 ### 1. [WHY SOLANA MEMECOINS ARE OVER](https://github.com/searadacunha/WHY-SOLANA-MEMECOINS-ARE-OVER) · Solana on-chain investigations
 
